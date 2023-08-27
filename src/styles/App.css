@@ -1,0 +1,126 @@
+
+body{
+  
+  box-sizing: border-box;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.head {
+  background-color: #f7f7f7;
+  padding: 20px;
+  margin: 0;
+  display: flex;
+  box-shadow:1px 6px 15px -9px rgba(170, 167, 167, 0.82);;
+}
+.footer{
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 2rem;
+    margin-top: 10%;
+    background: rgb(74, 32, 41);
+    color: white;
+    font-weight: 500;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+  
+}
+.span{
+  width: 50%;
+  color: rgb(45, 70, 89);
+  @media screen and (max-width: 60em) {
+   width: 80%;
+  }
+}
+.card-container{
+   display: flex;
+  flex-direction: row;
+   align-content: space-around;
+  overflow: scroll;
+  position: relative;
+}
+.card {
+  color: #382929;
+    padding: 1.5%;
+  width: 80%;
+  min-height: 20vh ;
+  margin-top: 10%;
+  box-shadow:1px 6px 15px -9px rgba(141, 75, 75, 0.82);;
+
+}
+.star{
+  width:3.5%;
+}
+
+.anim{
+  
+    display: inline-block;
+    overflow: hidden;
+    white-space: nowrap;
+  }
+ .anim:first-of-type{
+    animation: appear 3s infinite;
+  }
+  .anim:last-of-type{
+    animation: reveal 7s infinite;
+  }
+  .span:first-of-type{
+    animation: appear 9s ease-in;
+  }
+  
+  @keyframes appear{
+    0%{opacity: 0;}
+    20%{opacity: 1;}
+    80%{opacity: 1;}
+    100%{opacity: 0;}
+  }
+  @keyframes reveal{
+    0%{opacity: 0; width: 0px;}
+        20%{opacity: 1; width: 0px;}
+        30%{width: 55px;}
+        80%{opacity: 1;}
+        100%{opacity: 0; width: 305px;}
+      }
+h2{
+  color: rgb(145, 177, 205);
+}
+
+.cat{
+  display: flex;
+  text-align: center;
+  justify-content: space-evenly;
+ 
+  margin: 20px;
+  cursor: pointer;
+  
+  @media screen and (max-width: 60em) {
+    
+    flex-wrap: wrap;
+  }
+
+}
+.country{
+  display: flex;
+}
+.icon{
+  width: 25%;
+}
+.icon-link > p{
+  color: rgb(108, 38, 38);
+}
+
+/*@keyframes .App-logo {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}*/
